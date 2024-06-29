@@ -13,3 +13,9 @@ def index(request):
         _type_: _description_
     """        
     return HttpResponse(f"""<html><head><title>Hello</title></head><body></body></html>""")
+
+def home(request):
+    return HttpResponse("Welcome to home page!")
+
+def educative(request):
+    return HttpResponse("Welcome to Educative page!")
