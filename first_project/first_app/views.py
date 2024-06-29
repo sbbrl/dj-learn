@@ -17,7 +17,14 @@ def index(request):
 def home(request):
     return HttpResponse("Welcome to home page!")
 
-def educative(request):
-    return HttpResponse("Welcome to Educative page!")
-def show_age(request,age):
-    return HttpResponse(f"I am {age} years old.")
+# def educative(request):
+#     return HttpResponse("Welcome to Educative page!")
+# def show_age(request,age):
+#     return HttpResponse(f"I am {age} years old.")
+
+def even_or_odd(request, num):
+    if(num%2==0):
+        output="%s is an even number." % num
+    else:
+        output="%s is an odd number." % num
+    return HttpResponse(output)
