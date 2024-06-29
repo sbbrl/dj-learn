@@ -17,8 +17,8 @@ def index(request):
 def home(request):
     return HttpResponse("Welcome to home page!")
 
-# def educative(request):
-#     return HttpResponse("Welcome to Educative page!")
+def educative(request):
+    return HttpResponse("Welcome to Educative page!")
 # def show_age(request,age):
 #     return HttpResponse(f"I am {age} years old.")
 
