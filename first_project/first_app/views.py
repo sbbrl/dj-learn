@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
-
+import json
 
 def index(request):
     """_summary_
@@ -11,5 +11,5 @@ def index(request):
 
     Returns:
         _type_: _description_
-    """    
-    return HttpResponse("""<html><head><title>Hello</title></head><body>Helo</body></html>""")
+    """        
+    return HttpResponse(f"""<html><head><title>Hello</title></head><body></body></html>""")
