@@ -22,9 +22,12 @@ def home(request):
 # def show_age(request,age):
 #     return HttpResponse(f"I am {age} years old.")
 
-def even_or_odd(request, num):
-    if(num%2==0):
-        output="%s is an even number." % num
-    else:
-        output="%s is an odd number." % num
-    return HttpResponse(output)
+# def even_or_odd(request, num):
+#     if(num%2==0):
+#         output="%s is an even number." % num
+#     else:
+#         output="%s is an odd number." % num
+#     return HttpResponse(output)
+
+def hello(request,name):
+    return HttpResponse(f'Hello {name.split(" ")[0]} {name.split(" ")[1]}')
