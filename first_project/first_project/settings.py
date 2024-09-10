@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-jxnsnbh!(ldn@^v*b!i=hr77jovn1&6s4^_3ww7$ezi*k1%4jr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['jango.wiki']
+ALLOWED_HOSTS = ['jango.wiki','dj.istg.us']
 
 
 # Application definition
@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'first_app',
-    'django_mathjax'
+    # 'django_mathjax'
 ]
 
 MIDDLEWARE = [
