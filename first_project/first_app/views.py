@@ -12,7 +12,9 @@ def index(request):
     Returns:
         _type_: _description_
     """        
-    return HttpResponse(f"""<html><head><title>Hello</title></head><body></body></html>""")
+    # return HttpResponse(f"""<html><head><title>Hello</title></head><body></body></html>""")
+    favorite_book={'Raymond': "The Kite Runner",'Emma': "A Thousand Splendid Suns",'Denise': "The Great Gatsby"}
+    return render(request,'./first_app/index.html',context=favorite_book)
 
 def home(request):
     return HttpResponse("Welcome to home page!")
