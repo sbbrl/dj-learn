@@ -5,8 +5,24 @@
     <title>My First Application</title>
 </head>
 <body>
-    <h1>Hello i am under the water!</h1>
-    {{ Emma }}
+    <table style="padding: 2px width:100%; text-align:center">
+    <tr>
+         <th>Index</th>
+        <th>Tv Show</th>
+        
+        <th>IMDb Rating</th>
+    </tr>
+    {% for tv_show,IMDb_rating in tv_shows.items %}
+    {% comment %} {% if IMDb_rating >= "8" %} {% endcomment %}
+
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{tv_show}}</td>
+        <td>{{IMDb_rating | default:"N/A"}}</td>
+    </tr>
+    {% comment %} {% endif %} {% endcomment %}
+    {% endfor %}
+    </table>
     
 </body>
 </html>

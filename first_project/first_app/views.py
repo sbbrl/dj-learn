@@ -13,8 +13,8 @@ def index(request):
         _type_: _description_
     """        
     # return HttpResponse(f"""<html><head><title>Hello</title></head><body></body></html>""")
-    favorite_book={'Raymond': "The Kite Runner",'Emma': "A Thousand Splendid Suns",'Denise': "The Great Gatsby"}
-    return render(request,'./first_app/index.html',context=favorite_book)
+    tv_shows_list={"tv_shows":{'Game of Thrones':'9.3','Blacklist': '8','Suits': '8.5','The Witcher': '8.5','Test':None}}
+    return render(request,'first_app/index.html',context=tv_shows_list)
 
 def home(request):
     return HttpResponse("Welcome to home page!")
